@@ -114,7 +114,7 @@ Libraries used in the whole application are:
 </p>
 
 <p align="center">
-  <img src="screens/app.gif" >
+  <img src="screens/app.gif" width="400">
 </p>
 
 <p align="center">
