@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="searchedCharacter"
+            type="com.amrmustafa.casestudy.models.CharacterPresentation" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintlayout"
+        android:padding="@dimen/padding_default">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/drawable_padding"
+            android:src="@drawable/ic_person_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorOnBackground" />
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{searchedCharacter.name}'
+            style="@style/TextView.HeadLine"
+            app:layout_constraintStart_toEndOf="@id/image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Darth Vader" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/birth_year_text_view"
+            style="@style/TextView.Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{searchedCharacter.birthYear}'
+            app:layout_constraintStart_toStartOf="@id/name_text_view"
+            app:layout_constraintTop_toBottomOf="@id/name_text_view"
+            tools:text="BBY 14" />
+
+
+        <ImageButton
+            android:id="@+id/more_info_arrow_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/background_light"
+            android:contentDescription="@string/content_description_more_info_arrow"
+            android:src="@drawable/ic_arrow_right_32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
