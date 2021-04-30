@@ -106,12 +106,15 @@ Libraries used in the whole application are:
 <p align="center">
   <img src="screens/screen1.jpg" width="200">
   <img src="screens/screen2.jpg" width="200">
+</p>
+
+<p align="center">
   <img src="screens/screen3.jpg" width="200">
   <img src="screens/screen4.jpg" width="200">
 </p>
 
 <p align="center">
-  <img src="screens/app.gif" width="300">
+  <img src="screens/app.gif" >
 </p>
 
 <p align="center">
